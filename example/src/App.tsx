@@ -1,13 +1,13 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-samplelib';
+import { add } from 'react-native-samplelib';
 
 export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
 
   React.useEffect(() => {
-    multiply(3, 7).then(setResult);
+    add().then(setResult);
   }, []);
 
   return (
