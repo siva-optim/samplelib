@@ -20,3 +20,7 @@ const Samplelib = NativeModules.Samplelib
 export function multiply(a: number, b: number): Promise<number> {
   return Samplelib.multiply(a, b);
 }
+
+export function add(): Promise<number> {
+  return Samplelib.add();
+}
