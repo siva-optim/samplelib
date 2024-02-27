@@ -1,0 +1,6 @@
+framework module XCObjc {
+  umbrella header "XCObjc.h"
+  export *
+
+  module * { export * }
+}
